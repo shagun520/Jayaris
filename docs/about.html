@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us | Jayaris</title>
   <style>
-    * {
-        
+    * { 
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -17,6 +16,32 @@
       background-color: #f9fafb;
       color: #1e293b;
       line-height: 1.6;
+    }
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 999;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 24px 60px; font-size: 18px;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .nav-links { display: flex; gap: 30px; }
+    .nav-links a {
+      color: white; text-decoration: none;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover { color: #22d3ee; }
+    .cta-button {
+      padding: 10px 20px;
+      font-weight: 600; color: white;
+      background: transparent;
+      border: 2px solid transparent;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(to right, #14b8a6, #f97316);
+      border-radius: 6px;
+      transition: all 0.3s;
+    }
+    .cta-button:hover {
+      background: linear-gradient(to right, #14b8a6, #f97316);
+      color: black;
     }
 
     /* Header */
@@ -155,6 +180,17 @@
 </head>
 
 <body>
+
+     <nav>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#clients">Client Login</a>
+      <a href="#students">Student Login</a>
+      <a href="#orgs">Organization Login</a>
+    </div>
+    <a href="#contact" class="cta-button">LET'S BUILD TOGETHER</a>
+  </nav>
+
 
   <!-- HEADER -->
   <header class="header">
